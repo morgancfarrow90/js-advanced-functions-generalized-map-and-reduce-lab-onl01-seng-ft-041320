@@ -15,7 +15,7 @@ function reduce(src, cb, starting){
   let i = (!!starting) ? 0 : 1
 
   for (; i < src.length; i++) {
-    r = cb(src[i], r)
+    r = cb(src[i]) + r
   }
 
   return r;
